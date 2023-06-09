@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "es2021", 
+      "experimentalDecorators": true, 
+      "emitDecoratorMetadata": true, 
+      "module": "commonjs",
+      "rootDir": "./src", 
+      "outDir": "./dist", 
+      "removeComments": true, 
+      "esModuleInterop": true, 
+      "forceConsistentCasingInFileNames": true, 
+      "strict": false, 
+      "resolveJsonModule": true,
+      "skipLibCheck": true 
+    },
+  
+
+"include": [
+    "src/**/*"
+],
+"exclude": [
+    "node_modules",
+    "**/*.test.ts"
+]
+
+}
