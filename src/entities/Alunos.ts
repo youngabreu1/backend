@@ -1,16 +1,17 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryColumn } from 'typeorm';
+
 
 @Entity()
 export class Aluno {
-  @PrimaryGeneratedColumn()
-  id: number;
+  @PrimaryColumn()
+  cpf: number;
 
   @Column()
   name: string;
 
-  @Column()
-  email: string;
+  @Column({ type: 'date' })
+  dataNascimento: Date;
 
   @Column()
-  password: string;
+  endereco: string;
 }
